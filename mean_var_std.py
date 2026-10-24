@@ -1,7 +1,6 @@
 import numpy as np
-
 def calculate(list):
-       if len(list) != 9:
+    if len(list) != 9:
         raise ValueError("List must contain nine numbers.")
     dic={}
     arr=np.array(list)
@@ -38,5 +37,6 @@ def calculate(list):
                 arr1.sum(axis=1).tolist(),
                 arr1.sum().tolist()
     ]
-
-    return calculations
+    
+    
+    return dic
